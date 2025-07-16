@@ -36,6 +36,11 @@ main>section {
     margin-top: calc(130rem / 16);
 }
 
+.section-title {
+    font-size: calc(45rem / 16);
+    font-weight: 700;
+}
+
 /* Header styles */
 
 /* navbar related styles */
@@ -123,9 +128,34 @@ main>section {
     font-weight: bold;
 }
 
-.feature-title {
+/* fact section starts here */
+.facts-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.fact-card {
+    border: 1px solid #FF900E;
+    width: calc(240rem / 16);
+    height: calc(240rem / 16);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.fact-number {
     font-size: calc(45rem / 16);
-    font-weight: 500;
+    font-weight: 600;
+    margin: calc(10rem / 16) auto;
+}
+
+.fact-card>div {
+    text-align: center;
+}
+
+.facr-name {
+    font-size: calc(20rem / 16);
+    font-weight: 600;
 }
 
 /* responsive media query */
@@ -142,6 +172,15 @@ main>section {
     .our-features {
         margin-left: calc(20rem / 16);
     }
+
+    .facts-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        justify-items: center;
+        align-items: center;
+    }
+
 }
 
 /* for medium size device */
@@ -150,6 +189,14 @@ main>section {
     .teams {
         flex-direction: column;
 
+    }
+
+    .facts-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        justify-items: center;
+        align-items: center;
     }
 
     .our-features {
