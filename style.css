@@ -128,6 +128,45 @@ main>section {
     font-weight: bold;
 }
 
+/* new feature section starts here */
+.newFeatures {
+    gap: calc(140rem / 16);
+}
+
+#newFeatures-section-title {
+    border-left: 5px solid #FF900E;
+    padding: calc(20rem / 16);
+
+}
+
+.feature-card {
+    padding: calc(30rem / 16);
+    box-shadow: 0px calc(4rem /16) calc(30rem / 16) 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: calc(30rem / 16);
+    border-radius: calc(8rem / 16);
+}
+
+.feature-card .feature-title {
+    font-weight: 600;
+    font-size: calc(20rem / 16);
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+#experience-badge {
+    padding: calc(45rem / 16) calc(42rem / 16);
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+#experience-year {
+    font-size: calc(65rem / 16);
+    font-weight: 700;
+}
+
 /* fact section starts here */
 .facts-container {
     display: grid;
@@ -200,6 +239,11 @@ main>section {
         align-items: center;
     }
 
+    #experience-badge {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
 }
 
 /* for medium size device */
@@ -221,5 +265,10 @@ main>section {
 
     .our-features {
         margin: calc(20rem /16) auto;
+    }
+
+    #experience-badge {
+        margin-top: 20px;
+        margin-left: 20px;
     }
 }
