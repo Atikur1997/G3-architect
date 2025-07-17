@@ -213,7 +213,17 @@ main>section {
     filter: grayscale(100%);
 }
 
+footer {
+    margin: calc(130rem / 16) calc(240rem / 16);
+    max-width: 1440px;
+    height: 100px;
+    text-align: center;
+}
 
+footer>p {
+    font-size: calc(20rem / 16);
+    padding: calc(40rem / 16);
+}
 
 /* responsive media query */
 @media screen and (max-width:676px) {
@@ -244,7 +254,13 @@ main>section {
         margin-left: 20px;
     }
 
+    footer {
+        max-width: 100%;
+        margin: 0;
+    }
 }
+
+
 
 /* for medium size device */
 @media screen and (min-width:676.1px) and (max-width:992px) {
@@ -271,4 +287,18 @@ main>section {
         margin-top: 20px;
         margin-left: 20px;
     }
+
+    footer {
+        max-width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    footer>p {
+        font-size: 0.75rem;
+
+
+    }
+
+
 }
