@@ -293,6 +293,10 @@ footer>p {
         margin-left: 20px;
     }
 
+    .architect img {
+        width: 100%;
+    }
+
     footer {
         max-width: 100%;
         margin: 0;
@@ -319,5 +323,9 @@ footer>p {
     footer>p {
         padding: 20px 0;
 
+    }
+
+    .architect img {
+        width: 100%;
     }
 }
